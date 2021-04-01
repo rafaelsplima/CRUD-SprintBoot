@@ -18,7 +18,13 @@ public class Student extends AbstractEntity {
     public Student() {
     }
 
-    public Student (@NotEmpty String name, @NotEmpty @Email String email) {
+    public Student(@NotEmpty String name, @NotEmpty @Email String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    public Student(Long id, String name, String email) {
+        this.id = id;
         this.name = name;
         this.email = email;
     }
@@ -40,7 +46,7 @@ public class Student extends AbstractEntity {
     }
 
     @Override
-    public String toString () {
+    public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
