@@ -33,5 +33,6 @@ build/
 .vscode/
 
 # Gradle
+.gradle
 .idea/**/gradle.xml
 .idea/**/libraries
